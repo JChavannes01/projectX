@@ -1,12 +1,11 @@
 package main;
 
-import GUI.GUI;
+import GUI.Main;
 
 import java.io.IOException;
 import java.nio.file.*;
 import java.util.ArrayList;
 import java.util.List;
-//import sun.nio.fs
 
 /**
  * Created by Janko on 5/30/2017.
@@ -15,34 +14,45 @@ public class DocumentProcessor {
     private List<Path> files;
     private List<String> extensions;
     private Path targetDir;
-    // TODO get variable values from GUI
+    // TODO get variable values from Main
     private int minFileSize;
 
-    public DocumentProcessor(int minFileSize, Path targetDir) {
+    public DocumentProcessor(int minFileSize) {
         setMinFileSize(minFileSize);
-        this.targetDir = targetDir;
         files = new ArrayList<>();
         extensions = new ArrayList<>();
     }
 
+    /** Add the given extension to the list. */
     public void addExtension(String extension) {
         this.extensions.add(extension);
+    }
+
+    public void removeExtension(String ext) {
+        this.extensions.remove(ext);
+    }
+
+    /** Removes all extensions from the list. */
+    public void clearExtensions() {
+        this.extensions.clear();
     }
 
     public void setMinFileSize(int minFileSize) {
         this.minFileSize = minFileSize;
     }
 
+    /** Set the directory where the files will be moved to. */
     public void setTargetDir(Path targetDir) {
         this.targetDir = targetDir;
     }
 
+
     public void moveFiles() {
-        if (GUI.DEBUG) System.out.printf("Attempting to move %d file(s) to %s", files.size(), targetDir);
+        if (Main.DEBUG) System.out.printf("Attempting to move %d file(s) to %s", files.size(), targetDir);
         for (Path path : files) {
             try {
 //                Files.move(path, targetDir);
-                Files.copy(path, targetDir.resolve(path.getFileName()), StandardCopyOption.REPLACE_EXISTING);
+                Files.copy(path, targetDir.resolve(path.getFileName()), StandardCopyOption.REPLACE_EXISTING); //TODO change to Files.move()
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -76,7 +86,7 @@ public class DocumentProcessor {
                 } else {
                     if (checkConstraints(path, minFileSize, extensions)) {
                         fileNames.add(path);
-                        if (GUI.DEBUG)System.out.println(path.getFileName());
+                        if (Main.DEBUG)System.out.println(path.getFileName());
                     }
                 }
             }
