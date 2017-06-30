@@ -60,6 +60,12 @@ public class Main extends Component {
         frame.setResizable(false);
         frame.pack();
         frame.setVisible(true);
+
+        Runtime.getRuntime().addShutdownHook(new Thread(() -> {
+            System.out.print("Program Shutting down...");
+            System.out.println("Done!");
+            gui.saveSettings();
+        }));
     }
 
     private Main() {
