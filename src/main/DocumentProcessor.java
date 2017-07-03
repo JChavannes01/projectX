@@ -48,11 +48,12 @@ public class DocumentProcessor {
 
 
     public void moveFiles() {
-        if (Main.DEBUG) System.out.printf("Attempting to move %d file(s) to %s", files.size(), targetDir);
+        if (Main.DEBUG) System.out.printf("Attempting to move %d file(s) to %s\n", files.size(), targetDir);
         for (Path path : files) {
             try {
-//                Files.move(path, targetDir);
-                Files.copy(path, targetDir.resolve(path.getFileName()), StandardCopyOption.REPLACE_EXISTING); //TODO change to Files.move()
+                if (Main.DEBUG) System.out.printf("\tMoving file %s to %s\n", path, targetDir);
+                Files.move(path, targetDir.resolve(path.getFileName()), StandardCopyOption.REPLACE_EXISTING);
+//                Files.copy(path, targetDir.resolve(path.getFileName()), StandardCopyOption.REPLACE_EXISTING); //TODO change to Files.move()
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -62,7 +63,7 @@ public class DocumentProcessor {
     /**
      * Returns a list of all files in a directory and all subdirectories, that match search criteria.
      * @param path Path to the directory.
-     * @return
+     * @return A {@link List}<{@link Path}> of files
      */
     public List<Path> getAllFiles(String path) {
         Path searchDir = Paths.get(path);

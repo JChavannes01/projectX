@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="projectX:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="84fcb39f-15e9-4294-9996-738f24ce10cd" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projectX.settings" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/GUI/MoveConfirmDialog.form" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/GUI/MoveConfirmDialog.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/Testfolder/Nested folder/test2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/Testfolder/test1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/Main.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI/Main.form" afterPath="$PROJECT_DIR$/src/GUI/Main.form" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI/Main.java" afterPath="$PROJECT_DIR$/src/GUI/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/DocumentProcessor.java" afterPath="$PROJECT_DIR$/src/main/DocumentProcessor.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,35 +31,27 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="SelectExtensionsDialog.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GUI/SelectExtensionsDialog.java">
+      <file leaf-file-name="MoveConfirmDialog.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GUI/MoveConfirmDialog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-49">
-              <caret line="91" column="82" lean-forward="false" selection-start-line="91" selection-start-column="82" selection-end-line="91" selection-end-column="82" />
+            <state relative-caret-position="-357">
+              <caret line="27" column="100" lean-forward="false" selection-start-line="27" selection-start-column="100" selection-end-line="27" selection-end-column="100" />
               <folding>
-                <element signature="method#onReset#0;class#SelectExtensionsDialog#0" expanded="false" />
-                <element signature="method#onRemove#0;class#SelectExtensionsDialog#0" expanded="false" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1184#1312#0" expanded="true" />
+                <element signature="e#1311#1312#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DocumentProcessor.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DocumentProcessor.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/DocumentProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-337">
-              <caret line="21" column="29" lean-forward="false" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+            <state relative-caret-position="700">
+              <caret line="118" column="0" lean-forward="true" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#641#642#0" expanded="true" />
-                <element signature="e#687#688#0" expanded="true" />
-                <element signature="e#734#735#0" expanded="true" />
-                <element signature="e#777#778#0" expanded="true" />
-                <element signature="e#863#864#0" expanded="true" />
-                <element signature="e#902#903#0" expanded="true" />
-                <element signature="method#moveFiles#0;class#DocumentProcessor#0" expanded="false" />
-                <element signature="docComment;method#getAllFiles#0;class#DocumentProcessor#0" expanded="false" />
-                <element signature="method#getAllFiles#0;class#DocumentProcessor#0" expanded="false" />
                 <element signature="docComment;method#getFileNames#0;class#DocumentProcessor#0" expanded="false" />
                 <element signature="method#getFileNames#0;class#DocumentProcessor#0" expanded="false" />
                 <element signature="docComment;method#checkConstraints#0;class#DocumentProcessor#0" expanded="false" />
@@ -58,11 +61,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.form" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GUI/Main.form">
+          <provider selected="true" editor-type-id="ui-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GUI/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="65" column="40" lean-forward="true" selection-start-line="65" selection-start-column="40" selection-end-line="65" selection-end-column="40" />
+            <state relative-caret-position="3361">
+              <caret line="314" column="7" lean-forward="true" selection-start-line="314" selection-start-column="7" selection-end-line="314" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#onReset#0;class#Main#0" expanded="false" />
@@ -71,6 +81,8 @@
                 <element signature="method#onAddNewExtension#0;class#Main#0" expanded="false" />
                 <element signature="method#addNewExtension#0;class#Main#0" expanded="false" />
                 <element signature="method#saveSettings#0;class#Main#0" expanded="false" />
+                <element signature="method#defaultSettings#0;class#Main#0" expanded="false" />
+                <element signature="method#loadSettings#0;class#Main#0" expanded="false" />
                 <element signature="method#updateSearchDir#0;class#Main#0" expanded="false" />
                 <element signature="method#updateTargetDir#0;class#Main#0" expanded="false" />
                 <element signature="method#processLine#0;class#Main#0" expanded="false" />
@@ -99,7 +111,6 @@
       <find>targetDirLabel</find>
       <find>ExtensionList</find>
       <find>saves</find>
-      <find>searchFC</find>
       <find>targetFC</find>
       <find>setTargetDir</find>
       <find>filesize</find>
@@ -110,7 +121,10 @@
       <find>onreset</find>
       <find>move</find>
       <find>moveButton</find>
+      <find>extensions</find>
       <find>set</find>
+      <find>Res</find>
+      <find>searchFC</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -133,10 +147,12 @@
         <option value="$PROJECT_DIR$/src/GUI/SelectExtensionsDialog.java" />
         <option value="$PROJECT_DIR$/src/GUI/GUI.form" />
         <option value="$PROJECT_DIR$/src/GUI/GUI.java" />
-        <option value="$PROJECT_DIR$/src/GUI/Main.form" />
         <option value="$PROJECT_DIR$/the-file-name.txt" />
-        <option value="$PROJECT_DIR$/src/main/DocumentProcessor.java" />
+        <option value="$PROJECT_DIR$/src/GUI/MoveConfirmDialog.form" />
+        <option value="$PROJECT_DIR$/src/GUI/MoveConfirmDialog.java" />
+        <option value="$PROJECT_DIR$/src/GUI/Main.form" />
         <option value="$PROJECT_DIR$/src/GUI/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/DocumentProcessor.java" />
       </list>
     </option>
   </component>
@@ -191,6 +207,20 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projectX" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projectX" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -213,23 +243,9 @@
               <option name="myItemId" value="GUI" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="projectX" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projectX" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Testfolder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemId" value="newExtensionDialog" />
+              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -242,16 +258,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Testfolder" />
+              <option name="myItemId" value="GUI" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Nested folder" />
+              <option name="myItemId" value="MoveConfirmDialog" />
+              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projectX" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projectX" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GUI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Main" />
+              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -273,7 +311,16 @@
       <pane id="Scope" />
     </panes>
   </component>
+  <component name="PropertiesComponent">
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Janko\IdeaProjects\projectX\resources\Testfolder\Nested folder" />
+      <recent name="C:\Users\Janko\IdeaProjects\projectX\resources\Testfolder" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Janko\IdeaProjects\projectX\resources" />
     </key>
@@ -299,14 +346,14 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="SelectExtensionsDialog" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="MoveConfirmDialog" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="GUI.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="GUI.SelectExtensionsDialog" />
+      <option name="MAIN_CLASS_NAME" value="GUI.MoveConfirmDialog" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
@@ -522,13 +569,13 @@
     </configuration>
     <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-      <item index="1" class="java.lang.String" itemvalue="Application.SelectExtensionsDialog" />
+      <item index="1" class="java.lang.String" itemvalue="Application.MoveConfirmDialog" />
       <item index="2" class="java.lang.String" itemvalue="Application.newExtensionDialog" />
     </list>
     <recent_temporary>
       <list size="3">
         <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-        <item index="1" class="java.lang.String" itemvalue="Application.SelectExtensionsDialog" />
+        <item index="1" class="java.lang.String" itemvalue="Application.MoveConfirmDialog" />
         <item index="2" class="java.lang.String" itemvalue="Application.newExtensionDialog" />
       </list>
     </recent_temporary>
@@ -548,7 +595,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Tool Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -560,7 +607,7 @@
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="ANTLR Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -569,7 +616,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33333334" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33333334" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20622987" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896176" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -608,9 +655,9 @@
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" x="91" y="91" width="1738" height="848" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33333334" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33333334" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20354457" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20622987" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896176" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -624,30 +671,36 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/DocumentProcessor.java</url>
-          <line>81</line>
+          <line>82</line>
           <properties />
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/GUI/SelectExtensionsDialog.java</url>
-          <line>74</line>
+          <url>file://$PROJECT_DIR$/src/main/DocumentProcessor.java</url>
+          <line>55</line>
           <properties />
-          <option name="timeStamp" value="18" />
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/GUI/SelectExtensionsDialog.java</url>
+          <url>file://$PROJECT_DIR$/src/main/DocumentProcessor.java</url>
+          <line>54</line>
+          <properties />
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/GUI/Main.java</url>
           <line>75</line>
           <properties />
-          <option name="timeStamp" value="19" />
+          <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/GUI/SelectExtensionsDialog.java</url>
-          <line>83</line>
+          <url>file://$PROJECT_DIR$/src/GUI/Main.java</url>
+          <line>319</line>
           <properties />
-          <option name="timeStamp" value="21" />
+          <option name="timeStamp" value="44" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="29" />
+      <option name="time" value="45" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -656,44 +709,24 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/GUI/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="40" column="21" lean-forward="true" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#onReset#0;class#Main#0" expanded="false" />
-            <element signature="method#onRemove#0;class#Main#0" expanded="false" />
-            <element signature="docComment;method#onAddNewExtension#0;class#Main#0" expanded="false" />
-            <element signature="method#onAddNewExtension#0;class#Main#0" expanded="false" />
-            <element signature="method#addNewExtension#0;class#Main#0" expanded="false" />
-            <element signature="method#saveSettings#0;class#Main#0" expanded="false" />
-            <element signature="method#updateSearchDir#0;class#Main#0" expanded="false" />
-            <element signature="method#updateTargetDir#0;class#Main#0" expanded="false" />
-            <element signature="method#processLine#0;class#Main#0" expanded="false" />
-            <element signature="method#updateExtensionList#0;class#Main#0" expanded="false" />
-            <element signature="method#updateMinFileSize#0;class#Main#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI/Main.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/SelectExtensionsDialog.java">
+    <entry file="file://$PROJECT_DIR$/src/GUI/MoveConfirmDialog.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1584">
           <caret line="91" column="81" lean-forward="false" selection-start-line="91" selection-start-column="81" selection-end-line="91" selection-end-column="81" />
           <folding>
-            <element signature="method#onReset#0;class#SelectExtensionsDialog#0" expanded="false" />
-            <element signature="method#onRemove#0;class#SelectExtensionsDialog#0" expanded="false" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1184#1312#0" expanded="true" />
+            <element signature="e#1311#1312#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/SelectExtensionsDialog.form">
+    <entry file="file://$PROJECT_DIR$/src/GUI/MoveConfirmDialog.form">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -727,6 +760,8 @@
             <element signature="method#onAddNewExtension#0;class#Main#0" expanded="false" />
             <element signature="method#addNewExtension#0;class#Main#0" expanded="false" />
             <element signature="method#saveSettings#0;class#Main#0" expanded="false" />
+            <element signature="method#defaultSettings#0;class#Main#0" expanded="false" />
+            <element signature="method#loadSettings#0;class#Main#0" expanded="false" />
             <element signature="method#updateSearchDir#0;class#Main#0" expanded="false" />
             <element signature="method#updateTargetDir#0;class#Main#0" expanded="false" />
             <element signature="method#processLine#0;class#Main#0" expanded="false" />
@@ -750,15 +785,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#641#642#0" expanded="true" />
-            <element signature="e#687#688#0" expanded="true" />
-            <element signature="e#734#735#0" expanded="true" />
-            <element signature="e#777#778#0" expanded="true" />
-            <element signature="e#863#864#0" expanded="true" />
-            <element signature="e#902#903#0" expanded="true" />
-            <element signature="method#moveFiles#0;class#DocumentProcessor#0" expanded="false" />
-            <element signature="docComment;method#getAllFiles#0;class#DocumentProcessor#0" expanded="false" />
-            <element signature="method#getAllFiles#0;class#DocumentProcessor#0" expanded="false" />
             <element signature="docComment;method#getFileNames#0;class#DocumentProcessor#0" expanded="false" />
             <element signature="method#getFileNames#0;class#DocumentProcessor#0" expanded="false" />
             <element signature="docComment;method#checkConstraints#0;class#DocumentProcessor#0" expanded="false" />
@@ -767,20 +793,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/SelectExtensionsDialog.form">
+    <entry file="file://$PROJECT_DIR$/src/GUI/MoveConfirmDialog.form">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/SelectExtensionsDialog.java">
+    <entry file="file://$PROJECT_DIR$/src/GUI/MoveConfirmDialog.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
           <caret line="24" column="26" lean-forward="false" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
           <folding>
-            <element signature="method#onReset#0;class#SelectExtensionsDialog#0" expanded="false" />
-            <element signature="method#onRemove#0;class#SelectExtensionsDialog#0" expanded="false" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1184#1312#0" expanded="true" />
+            <element signature="e#1311#1312#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -797,6 +824,8 @@
             <element signature="method#onAddNewExtension#0;class#Main#0" expanded="false" />
             <element signature="method#addNewExtension#0;class#Main#0" expanded="false" />
             <element signature="method#saveSettings#0;class#Main#0" expanded="false" />
+            <element signature="method#defaultSettings#0;class#Main#0" expanded="false" />
+            <element signature="method#loadSettings#0;class#Main#0" expanded="false" />
             <element signature="method#updateSearchDir#0;class#Main#0" expanded="false" />
             <element signature="method#updateTargetDir#0;class#Main#0" expanded="false" />
             <element signature="method#processLine#0;class#Main#0" expanded="false" />
@@ -817,15 +846,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#641#642#0" expanded="true" />
-            <element signature="e#687#688#0" expanded="true" />
-            <element signature="e#734#735#0" expanded="true" />
-            <element signature="e#777#778#0" expanded="true" />
-            <element signature="e#863#864#0" expanded="true" />
-            <element signature="e#902#903#0" expanded="true" />
-            <element signature="method#moveFiles#0;class#DocumentProcessor#0" expanded="false" />
-            <element signature="docComment;method#getAllFiles#0;class#DocumentProcessor#0" expanded="false" />
-            <element signature="method#getAllFiles#0;class#DocumentProcessor#0" expanded="false" />
             <element signature="docComment;method#getFileNames#0;class#DocumentProcessor#0" expanded="false" />
             <element signature="method#getFileNames#0;class#DocumentProcessor#0" expanded="false" />
             <element signature="docComment;method#checkConstraints#0;class#DocumentProcessor#0" expanded="false" />
@@ -834,20 +854,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/SelectExtensionsDialog.form">
+    <entry file="file://$PROJECT_DIR$/src/GUI/MoveConfirmDialog.form">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/SelectExtensionsDialog.java">
+    <entry file="file://$PROJECT_DIR$/src/GUI/MoveConfirmDialog.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
           <caret line="24" column="26" lean-forward="false" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
           <folding>
-            <element signature="method#onReset#0;class#SelectExtensionsDialog#0" expanded="false" />
-            <element signature="method#onRemove#0;class#SelectExtensionsDialog#0" expanded="false" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1184#1312#0" expanded="true" />
+            <element signature="e#1311#1312#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -864,6 +885,8 @@
             <element signature="method#onAddNewExtension#0;class#Main#0" expanded="false" />
             <element signature="method#addNewExtension#0;class#Main#0" expanded="false" />
             <element signature="method#saveSettings#0;class#Main#0" expanded="false" />
+            <element signature="method#defaultSettings#0;class#Main#0" expanded="false" />
+            <element signature="method#loadSettings#0;class#Main#0" expanded="false" />
             <element signature="method#updateSearchDir#0;class#Main#0" expanded="false" />
             <element signature="method#updateTargetDir#0;class#Main#0" expanded="false" />
             <element signature="method#processLine#0;class#Main#0" expanded="false" />
@@ -887,15 +910,6 @@
           <caret line="70" column="110" lean-forward="false" selection-start-line="70" selection-start-column="110" selection-end-line="70" selection-end-column="110" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#641#642#0" expanded="true" />
-            <element signature="e#687#688#0" expanded="true" />
-            <element signature="e#734#735#0" expanded="true" />
-            <element signature="e#777#778#0" expanded="true" />
-            <element signature="e#863#864#0" expanded="true" />
-            <element signature="e#902#903#0" expanded="true" />
-            <element signature="method#moveFiles#0;class#DocumentProcessor#0" expanded="false" />
-            <element signature="docComment;method#getAllFiles#0;class#DocumentProcessor#0" expanded="false" />
-            <element signature="method#getAllFiles#0;class#DocumentProcessor#0" expanded="false" />
             <element signature="docComment;method#getFileNames#0;class#DocumentProcessor#0" expanded="false" />
             <element signature="method#getFileNames#0;class#DocumentProcessor#0" expanded="false" />
             <element signature="docComment;method#checkConstraints#0;class#DocumentProcessor#0" expanded="false" />
@@ -916,6 +930,8 @@
             <element signature="method#onAddNewExtension#0;class#Main#0" expanded="false" />
             <element signature="method#addNewExtension#0;class#Main#0" expanded="false" />
             <element signature="method#saveSettings#0;class#Main#0" expanded="false" />
+            <element signature="method#defaultSettings#0;class#Main#0" expanded="false" />
+            <element signature="method#loadSettings#0;class#Main#0" expanded="false" />
             <element signature="method#updateSearchDir#0;class#Main#0" expanded="false" />
             <element signature="method#updateTargetDir#0;class#Main#0" expanded="false" />
             <element signature="method#processLine#0;class#Main#0" expanded="false" />
@@ -939,15 +955,6 @@
           <caret line="70" column="110" lean-forward="false" selection-start-line="70" selection-start-column="110" selection-end-line="70" selection-end-column="110" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#641#642#0" expanded="true" />
-            <element signature="e#687#688#0" expanded="true" />
-            <element signature="e#734#735#0" expanded="true" />
-            <element signature="e#777#778#0" expanded="true" />
-            <element signature="e#863#864#0" expanded="true" />
-            <element signature="e#902#903#0" expanded="true" />
-            <element signature="method#moveFiles#0;class#DocumentProcessor#0" expanded="false" />
-            <element signature="docComment;method#getAllFiles#0;class#DocumentProcessor#0" expanded="false" />
-            <element signature="method#getAllFiles#0;class#DocumentProcessor#0" expanded="false" />
             <element signature="docComment;method#getFileNames#0;class#DocumentProcessor#0" expanded="false" />
             <element signature="method#getFileNames#0;class#DocumentProcessor#0" expanded="false" />
             <element signature="docComment;method#checkConstraints#0;class#DocumentProcessor#0" expanded="false" />
@@ -968,6 +975,8 @@
             <element signature="method#onAddNewExtension#0;class#Main#0" expanded="false" />
             <element signature="method#addNewExtension#0;class#Main#0" expanded="false" />
             <element signature="method#saveSettings#0;class#Main#0" expanded="false" />
+            <element signature="method#defaultSettings#0;class#Main#0" expanded="false" />
+            <element signature="method#loadSettings#0;class#Main#0" expanded="false" />
             <element signature="method#updateSearchDir#0;class#Main#0" expanded="false" />
             <element signature="method#updateTargetDir#0;class#Main#0" expanded="false" />
             <element signature="method#processLine#0;class#Main#0" expanded="false" />
@@ -991,15 +1000,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#641#642#0" expanded="true" />
-            <element signature="e#687#688#0" expanded="true" />
-            <element signature="e#734#735#0" expanded="true" />
-            <element signature="e#777#778#0" expanded="true" />
-            <element signature="e#863#864#0" expanded="true" />
-            <element signature="e#902#903#0" expanded="true" />
-            <element signature="method#moveFiles#0;class#DocumentProcessor#0" expanded="false" />
-            <element signature="docComment;method#getAllFiles#0;class#DocumentProcessor#0" expanded="false" />
-            <element signature="method#getAllFiles#0;class#DocumentProcessor#0" expanded="false" />
             <element signature="docComment;method#getFileNames#0;class#DocumentProcessor#0" expanded="false" />
             <element signature="method#getFileNames#0;class#DocumentProcessor#0" expanded="false" />
             <element signature="docComment;method#checkConstraints#0;class#DocumentProcessor#0" expanded="false" />
@@ -1020,6 +1020,8 @@
             <element signature="method#onAddNewExtension#0;class#Main#0" expanded="false" />
             <element signature="method#addNewExtension#0;class#Main#0" expanded="false" />
             <element signature="method#saveSettings#0;class#Main#0" expanded="false" />
+            <element signature="method#defaultSettings#0;class#Main#0" expanded="false" />
+            <element signature="method#loadSettings#0;class#Main#0" expanded="false" />
             <element signature="method#updateSearchDir#0;class#Main#0" expanded="false" />
             <element signature="method#updateTargetDir#0;class#Main#0" expanded="false" />
             <element signature="method#processLine#0;class#Main#0" expanded="false" />
@@ -1043,15 +1045,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#641#642#0" expanded="true" />
-            <element signature="e#687#688#0" expanded="true" />
-            <element signature="e#734#735#0" expanded="true" />
-            <element signature="e#777#778#0" expanded="true" />
-            <element signature="e#863#864#0" expanded="true" />
-            <element signature="e#902#903#0" expanded="true" />
-            <element signature="method#moveFiles#0;class#DocumentProcessor#0" expanded="false" />
-            <element signature="docComment;method#getAllFiles#0;class#DocumentProcessor#0" expanded="false" />
-            <element signature="method#getAllFiles#0;class#DocumentProcessor#0" expanded="false" />
             <element signature="docComment;method#getFileNames#0;class#DocumentProcessor#0" expanded="false" />
             <element signature="method#getFileNames#0;class#DocumentProcessor#0" expanded="false" />
             <element signature="docComment;method#checkConstraints#0;class#DocumentProcessor#0" expanded="false" />
@@ -1072,6 +1065,8 @@
             <element signature="method#onAddNewExtension#0;class#Main#0" expanded="false" />
             <element signature="method#addNewExtension#0;class#Main#0" expanded="false" />
             <element signature="method#saveSettings#0;class#Main#0" expanded="false" />
+            <element signature="method#defaultSettings#0;class#Main#0" expanded="false" />
+            <element signature="method#loadSettings#0;class#Main#0" expanded="false" />
             <element signature="method#updateSearchDir#0;class#Main#0" expanded="false" />
             <element signature="method#updateTargetDir#0;class#Main#0" expanded="false" />
             <element signature="method#processLine#0;class#Main#0" expanded="false" />
@@ -1108,6 +1103,8 @@
             <element signature="method#onAddNewExtension#0;class#Main#0" expanded="false" />
             <element signature="method#addNewExtension#0;class#Main#0" expanded="false" />
             <element signature="method#saveSettings#0;class#Main#0" expanded="false" />
+            <element signature="method#defaultSettings#0;class#Main#0" expanded="false" />
+            <element signature="method#loadSettings#0;class#Main#0" expanded="false" />
             <element signature="method#updateSearchDir#0;class#Main#0" expanded="false" />
             <element signature="method#updateTargetDir#0;class#Main#0" expanded="false" />
             <element signature="method#processLine#0;class#Main#0" expanded="false" />
@@ -1177,24 +1174,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/SelectExtensionsDialog.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="44" lean-forward="true" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/Repair_s1483870_Rick_Fontein/PP-Final-Project/src/main/java/pp/finalproject/Compiler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="281">
@@ -1202,29 +1181,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/Main.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/the-file-name.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/newExtensionDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="36" column="10" lean-forward="false" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1239,40 +1199,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/DocumentProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-337">
-          <caret line="21" column="29" lean-forward="false" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#641#642#0" expanded="true" />
-            <element signature="e#687#688#0" expanded="true" />
-            <element signature="e#734#735#0" expanded="true" />
-            <element signature="e#777#778#0" expanded="true" />
-            <element signature="e#863#864#0" expanded="true" />
-            <element signature="e#902#903#0" expanded="true" />
-            <element signature="method#moveFiles#0;class#DocumentProcessor#0" expanded="false" />
-            <element signature="docComment;method#getAllFiles#0;class#DocumentProcessor#0" expanded="false" />
-            <element signature="method#getAllFiles#0;class#DocumentProcessor#0" expanded="false" />
-            <element signature="docComment;method#getFileNames#0;class#DocumentProcessor#0" expanded="false" />
-            <element signature="method#getFileNames#0;class#DocumentProcessor#0" expanded="false" />
-            <element signature="docComment;method#checkConstraints#0;class#DocumentProcessor#0" expanded="false" />
-            <element signature="method#checkConstraints#0;class#DocumentProcessor#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/SelectExtensionsDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-49">
-          <caret line="91" column="82" lean-forward="false" selection-start-line="91" selection-start-column="82" selection-end-line="91" selection-end-column="82" />
-          <folding>
-            <element signature="method#onReset#0;class#SelectExtensionsDialog#0" expanded="false" />
-            <element signature="method#onRemove#0;class#SelectExtensionsDialog#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projectX.settings">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -1281,10 +1207,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_72/jre/lib/rt.jar!/sun/misc/Unsafe.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7282">
+          <caret line="332" column="23" lean-forward="false" selection-start-line="332" selection-start-column="23" selection-end-line="332" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="44" lean-forward="true" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/Main.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/newExtensionDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-291">
+          <caret line="36" column="10" lean-forward="false" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/MoveConfirmDialog.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="65" column="40" lean-forward="true" selection-start-line="65" selection-start-column="40" selection-end-line="65" selection-end-column="40" />
+        <state relative-caret-position="3361">
+          <caret line="314" column="7" lean-forward="true" selection-start-line="314" selection-start-column="7" selection-end-line="314" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#onReset#0;class#Main#0" expanded="false" />
@@ -1293,6 +1264,8 @@
             <element signature="method#onAddNewExtension#0;class#Main#0" expanded="false" />
             <element signature="method#addNewExtension#0;class#Main#0" expanded="false" />
             <element signature="method#saveSettings#0;class#Main#0" expanded="false" />
+            <element signature="method#defaultSettings#0;class#Main#0" expanded="false" />
+            <element signature="method#loadSettings#0;class#Main#0" expanded="false" />
             <element signature="method#updateSearchDir#0;class#Main#0" expanded="false" />
             <element signature="method#updateTargetDir#0;class#Main#0" expanded="false" />
             <element signature="method#processLine#0;class#Main#0" expanded="false" />
@@ -1302,5 +1275,107 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/MoveConfirmDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-357">
+          <caret line="27" column="100" lean-forward="false" selection-start-line="27" selection-start-column="100" selection-end-line="27" selection-end-column="100" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1184#1312#0" expanded="true" />
+            <element signature="e#1311#1312#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/DocumentProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="118" column="0" lean-forward="true" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#getFileNames#0;class#DocumentProcessor#0" expanded="false" />
+            <element signature="method#getFileNames#0;class#DocumentProcessor#0" expanded="false" />
+            <element signature="docComment;method#checkConstraints#0;class#DocumentProcessor#0" expanded="false" />
+            <element signature="method#checkConstraints#0;class#DocumentProcessor#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>projectX:jar</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>projectX</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

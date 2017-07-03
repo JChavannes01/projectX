@@ -38,12 +38,13 @@ public class Main extends Component {
     private JButton removeButton;
     private JButton newButton;
     private JButton resetButton;
+    private JFrame frame;
 
     private DocumentProcessor documentProcessor;
 
     public static void main(String[] args) {
-        Main gui = new Main();
         JFrame frame = new JFrame("Project X");
+        Main gui = new Main(frame);
         frame.setContentPane(gui.mainPanel);
         //Setup menubar
         gui.menuBar = new JMenuBar();
@@ -57,8 +58,9 @@ public class Main extends Component {
         frame.setJMenuBar(gui.menuBar);
 
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        frame.setResizable(false);
+        frame.setResizable(true);
         frame.pack();
+        gui.updateGUI();
         frame.setVisible(true);
 
         Runtime.getRuntime().addShutdownHook(new Thread(() -> {
@@ -68,7 +70,8 @@ public class Main extends Component {
         }));
     }
 
-    private Main() {
+    private Main(JFrame frame) {
+        this.frame = frame;
 
         // Set spinner characteristics
         SpinnerNumberModel fileSizeModel = new SpinnerNumberModel(0, 0, null, 150);
@@ -122,18 +125,28 @@ public class Main extends Component {
                 updateTargetDir(targetDir.toString());
             }
         });
-        moveButton.addActionListener(e -> {
-            if (DEBUG)System.out.println("[Main] Movebutton pressed!");
-            //Make sure filesize is consistent with Main
-            documentProcessor.setMinFileSize(Integer.parseInt(fileSizeSpinner.getValue().toString()));
-            documentProcessor.getAllFiles(searchFC.getCurrentDirectory().getPath());
-            //TODO confirmation window
-            saveSettings();
-//            SelectExtensionsDialog dialog = new SelectExtensionsDialog();
-//            dialog.pack();
-//            dialog.setVisible(true);
-//            documentProcessor.moveFiles();
-        });
+        moveButton.addActionListener(e -> onMove());
+    }
+
+    private void onMove() {
+        if (DEBUG)System.out.println("[Main] Movebutton pressed!");
+
+        //Make sure filesize is consistent with Main and get files
+        documentProcessor.setMinFileSize(Integer.parseInt(fileSizeSpinner.getValue().toString()));
+        List<Path> paths = documentProcessor.getAllFiles(searchFC.getCurrentDirectory().getPath());
+
+        //convert paths to strings
+        List<String> sPaths = new ArrayList<>();
+        if (DEBUG) System.out.println("Adding files to confirm window");
+        for (Path path : paths) {
+            sPaths.add(path.getFileName().toString());
+            if (DEBUG) System.out.println("\tfile: *" + path.getFileName().toString());
+        }
+        MoveConfirmDialog dialog = new MoveConfirmDialog(sPaths, targetDirLabel.getText());
+        boolean move = dialog.showDialog();
+        if (move) {
+            documentProcessor.moveFiles();
+        }
     }
 
     /** Resets the list of extensionfilters to default values*/
@@ -241,21 +254,23 @@ public class Main extends Component {
         searchFC.setCurrentDirectory(file);
         searchDirLabel.setText(searchFC.getCurrentDirectory().getPath());
         searchDirLabel.setToolTipText(searchDirLabel.getText());
+        updateGUI();
     }
 
     /** Updates the TargetDir FC and label */
     private void updateTargetDir(String path) {
-        File file = new File(path.trim());
-        targetFC.setCurrentDirectory(file.getAbsoluteFile());
+        File file = new File(path.trim()).getAbsoluteFile();
+        targetFC.setCurrentDirectory(file);
         targetDirLabel.setText(targetFC.getCurrentDirectory().getPath());
         targetDirLabel.setToolTipText(targetDirLabel.getText());
+        updateGUI();
         // Set dp target folder.
         documentProcessor.setTargetDir(file.toPath());
     }
 
     /** Processes a line of the settings file, updating the corresponding setting. */
     private void processLine(String line) {
-        String[] parts = line.split(":");
+        String[] parts = line.split(":",2);
         switch (parts[0].trim()) {
             case "targetDirectory":
                 updateTargetDir(parts[1]);
@@ -293,4 +308,17 @@ public class Main extends Component {
         value = (value >= 0) ? value : 0;
         fileSizeSpinner.setValue(value);
     }
+
+    /** Set window sizes */
+    private void updateGUI() {
+        // TODO create cleaner solution
+        optionsPanel.updateUI();
+        Dimension dim = new Dimension(optionsPanel.getWidth() + 50, frame.getHeight());
+        if (frame.getWidth() < optionsPanel.getWidth() + 100) {
+            frame.setSize(dim);
+        } else {
+            frame.pack();
+        }
+    }
+
 }
